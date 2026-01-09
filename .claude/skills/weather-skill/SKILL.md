@@ -8,7 +8,7 @@ allowed-tools:
 
 # Weather Skill
 
-This skill provides weather information using the local `weather/weather.py` utility.
+This skill provides weather information using the `.claude/skills/weather-skill/weather/weather.py` utility.
 
 ## Slash Command Usage
 
@@ -25,13 +25,13 @@ If the user provided a location argument, use it directly. If no argument was pr
 Run the weather script with a location:
 
 ```bash
-python weather/weather.py "San Diego"
+python .claude/skills/weather-skill/weather/weather.py "San Diego"
 ```
 
 For a 3-day forecast:
 
 ```bash
-python weather/weather.py "San Diego" --forecast
+python .claude/skills/weather-skill/weather/weather.py "San Diego" --forecast
 ```
 
 ## Supported Location Formats
@@ -55,5 +55,5 @@ When providing weather information:
 ## Technical Details
 
 - Data source: wttr.in (free, no API key required)
-- Script location: `weather/weather.py`
+- Script location: `.claude/skills/weather-skill/weather/weather.py`
 - Requires: Python 3.x with standard library only
