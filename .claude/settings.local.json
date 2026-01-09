@@ -16,7 +16,9 @@
       "Bash(timeout 3 python:*)",
       "Bash(timeout 2 python:*)",
       "mcp__weather-mcp__weather_tool",
-      "WebFetch(domain:agnost.ai)"
+      "WebFetch(domain:agnost.ai)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:docs.claude.com)"
     ]
   },
   "enableAllProjectMcpServers": true,

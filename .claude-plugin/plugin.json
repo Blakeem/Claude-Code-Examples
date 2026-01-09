@@ -12,7 +12,18 @@
   "keywords": ["weather", "mcp", "skills", "commands", "extensibility", "demo"],
   "commands": "./.claude/commands/",
   "skills": "./.claude/skills/",
-  "agents": ["./.claude/agents/"],
+  "agents": [
+    {
+      "name": "opus-senior-dev",
+      "source": "./.claude/agents/opus-senior-dev.md",
+      "description": "Senior developer agent using Opus for complex tasks"
+    },
+    {
+      "name": "web-researcher",
+      "source": "./.claude/agents/web-researcher.md",
+      "description": "Web research specialist for gathering verified information"
+    }
+  ],
   "mcpServers": {
     "weather-mcp": {
       "type": "stdio",
