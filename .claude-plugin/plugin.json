@@ -12,6 +12,7 @@
   "keywords": ["weather", "mcp", "skills", "commands", "extensibility", "demo"],
   "commands": "./.claude/commands/",
   "skills": "./.claude/skills/",
+  "agents": "./.claude/agents/",
   "mcpServers": {
     "weather-mcp": {
       "type": "stdio",
