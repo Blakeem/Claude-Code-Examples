@@ -84,21 +84,21 @@ def format_weather_report(data: dict) -> str:
         visibility = current["visibility"]
 
         report = f"""
-╔══════════════════════════════════════════════════════════════╗
-║                    WEATHER REPORT                            ║
-╠══════════════════════════════════════════════════════════════╣
-║  Location: {city}, {region}, {country}
-║
-║  Current Conditions: {description}
-║
-║  Temperature: {temp_f}°F ({temp_c}°C)
-║  Feels Like:  {feels_like_f}°F ({feels_like_c}°C)
-║
-║  Humidity:    {humidity}%
-║  Wind:        {wind_mph} mph {wind_dir}
-║  UV Index:    {uv_index}
-║  Visibility:  {visibility} miles
-╚══════════════════════════════════════════════════════════════╝
++--------------------------------------------------------------+
+|                    WEATHER REPORT                            |
++--------------------------------------------------------------+
+|  Location: {city}, {region}, {country}
+|
+|  Current Conditions: {description}
+|
+|  Temperature: {temp_f}F ({temp_c}C)
+|  Feels Like:  {feels_like_f}F ({feels_like_c}C)
+|
+|  Humidity:    {humidity}%
+|  Wind:        {wind_mph} mph {wind_dir}
+|  UV Index:    {uv_index}
+|  Visibility:  {visibility} miles
++--------------------------------------------------------------+
 """
         return report
 
@@ -136,7 +136,7 @@ def get_forecast(location: str, days: int = 3) -> str:
             desc = day["hourly"][4]["weatherDesc"][0]["value"]  # Midday weather
 
             lines.append(f"\n{date}")
-            lines.append(f"  High: {max_temp}°F  |  Low: {min_temp}°F")
+            lines.append(f"  High: {max_temp}F  |  Low: {min_temp}F")
             lines.append(f"  Conditions: {desc}")
 
         return "\n".join(lines)
