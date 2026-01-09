@@ -18,7 +18,9 @@
       "mcp__weather-mcp__weather_tool",
       "WebFetch(domain:agnost.ai)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "WebFetch(domain:docs.claude.com)"
+      "WebFetch(domain:docs.claude.com)",
+      "WebFetch(domain:open-meteo.com)",
+      "Bash(claude mcp restart:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

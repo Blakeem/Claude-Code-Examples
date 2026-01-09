@@ -134,8 +134,11 @@ def weather_help() -> str:
 - Current conditions (temperature, humidity, wind)
 - 3-day forecast
 
-## Data Source
-Weather data provided by wttr.in (free, no API key required).
+## Data Sources (with automatic fallback)
+- **Primary**: wttr.in (free, no API key required)
+- **Fallback**: Open-Meteo (free, no API key required)
+
+If the primary source fails, the fallback is used automatically.
 """
 
 
