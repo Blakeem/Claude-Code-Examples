@@ -15,11 +15,12 @@ Configure: claude mcp add weather-mcp -- python mcp-server/weather_server.py
 import sys
 import os
 
-# Add parent directory to path so we can import the weather module
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Add skills/weather-skill directory to path so we can import the weather module
+plugin_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(plugin_root, "skills", "weather-skill"))
 
 from mcp.server.fastmcp import FastMCP
-from weather.weather import get_weather, format_weather_report, get_forecast
+from weather import get_weather, format_weather_report, get_forecast
 
 # Create the MCP server
 mcp = FastMCP("Weather MCP")

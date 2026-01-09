@@ -10,8 +10,8 @@
   "repository": "https://github.com/Blakeem/Claude-Code-Examples",
   "license": "MIT",
   "keywords": ["weather", "mcp", "skills", "commands", "extensibility", "demo"],
-  "commands": "./commands/",
-  "skills": "./skills/",
+  "commands": "./.claude/commands/",
+  "skills": "./.claude/skills/",
   "mcpServers": {
     "weather-mcp": {
       "type": "stdio",
