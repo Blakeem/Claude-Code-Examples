@@ -15,7 +15,8 @@
       "Bash(pip uninstall:*)",
       "Bash(timeout 3 python:*)",
       "Bash(timeout 2 python:*)",
-      "mcp__weather-mcp__weather_tool"
+      "mcp__weather-mcp__weather_tool",
+      "WebFetch(domain:agnost.ai)"
     ]
   },
   "enableAllProjectMcpServers": true,
