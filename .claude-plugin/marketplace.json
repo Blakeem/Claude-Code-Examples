@@ -1,0 +1,13 @@
+{
+  "name": "claude-code-examples-marketplace",
+  "owner": { "name": "Blake" },
+  "plugins": [
+    {
+      "name": "claude-code-examples",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Blakeem/Claude-Code-Examples.git"
+      }
+    }
+  ]
+}

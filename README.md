@@ -4,6 +4,18 @@ Demonstration examples for the UCSD AI Use Case presentation showing Claude Code
 
 All examples implement the same weather functionality to compare how each mechanism works.
 
+## Plugin Installation
+
+Install this as a Claude Code plugin from the marketplace:
+
+```bash
+# Add the marketplace
+/plugin marketplace add https://github.com/Blakeem/Claude-Code-Examples
+
+# Install the plugin
+/plugin install claude-code-examples@claude-code-examples-marketplace
+```
+
 ## Quick Start
 
 ```bash

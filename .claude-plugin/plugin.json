@@ -1,0 +1,21 @@
+{
+  "name": "claude-code-examples",
+  "version": "1.0.0",
+  "description": "Claude Code extensibility demo showcasing Commands, Skills, and MCP Servers with weather functionality examples",
+  "author": {
+    "name": "Blake McDonald",
+    "url": "https://github.com/Blakeem"
+  },
+  "homepage": "https://github.com/Blakeem/Claude-Code-Examples",
+  "repository": "https://github.com/Blakeem/Claude-Code-Examples",
+  "license": "MIT",
+  "keywords": ["weather", "mcp", "skills", "commands", "extensibility", "demo"],
+  "mcpServers": {
+    "weather-mcp": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp-server/weather_server.py"],
+      "env": {}
+    }
+  }
+}
